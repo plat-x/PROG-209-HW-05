@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movies</title>
+	<link rel="stylesheet" href="style.css">
+	<script defer src="movie.js"></script>
+	<script defer src="main.js"></script>
+</head>
+
+<body>
+	<main>
+		<h1>ObjectHW - Movie Rating</h1>
+		<p id="instructions">Enter one movie title along with a rating. The rating should be an integer from 1 to 5, with 5 being a good movie and 1 a bad movie.</p>
+
+		<form>
+			<label for="titleInput">Title:</label>
+			<input type="text" id="titleInput" name="title" placeholder="Finding Nemo" autofocus>
+
+			<label for="ratingInput">Rating:</label>
+			<input type="text" id="ratingInput" placeholder="5" name="rating">
+			<br>
+			<br>
+			<input type="button" id="addMovieButton" value="Add Movie">
+			<input type="button" id="showMoviesButton" value="Show Movies">
+		</form>
+
+		<div id="displayArea">
+			<h4>Movie List</h4>
+			<ul id="myUl"></ul>
+		</div>
+	</main>
+
+	<footer>
+		<br>
+		<hr>
+		<p>For educational purposes only.</p>
+	</footer>
+
+</body>
+</html>
